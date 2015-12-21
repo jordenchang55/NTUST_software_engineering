@@ -12,3 +12,4 @@
 * [Bootstrap](http://getbootstrap.com/)
 * [DataTables](https://www.datatables.net/)
 * [metronic_v3.6.1](https://drive.google.com/file/d/0B6lXUkOqKdHrTGFWa2RRZVk4T3c/view)
+* [Animate.css](https://daneden.github.io/animate.css/)
