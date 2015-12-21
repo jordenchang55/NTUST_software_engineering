@@ -179,8 +179,20 @@ Login page
   -webkit-animation: hue 60s infinite linear;
   font-size: 6rem;
   margin: auto;
+}
 
-  -webkit-animation-duration: 0.5s;
-  /*-webkit-animation-delay: 0.3s;*/
-  -webkit-animation-iteration-count: 1;
+.login_title:hover {
+  -webkit-animation: jello 1.0s;
+  animation: jello 1.0s;
+}
+
+.backstretch {
+  -webkit-animation-timing-function: ease;
+  -webkit-animation: ani1 20s 0s infinite;
+}
+
+@-webkit-keyframes ani1 {
+  0% { -webkit-transform: scale(1.0);  }
+  50% { -webkit-transform: scale(1.2);  }
+  100% { -webkit-transform: scale(1.0);  }
 }
