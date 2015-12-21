@@ -1,4 +1,4 @@
-var CreateAccount = function () {
+var Login = function () {
 
     var handleRegister = function () {
 
@@ -6,7 +6,6 @@ var CreateAccount = function () {
             if (!state.id) return state.text; // optgroup
             return "<img class='flag' src='assets/global/img/flags/" + state.id.toLowerCase() + ".png'/>&nbsp;&nbsp;" + state.text;
         }
-
 
         $("#select2_sample4").select2({
             placeholder: '<i class="fa fa-map-marker"></i>&nbsp;Select a Country',
@@ -18,12 +17,9 @@ var CreateAccount = function () {
             }
         });
 
-
         $('#select2_sample4').change(function () {
             $('.register-form').validate().element($(this)); //revalidate the chosen dropdown value and show error or success message for the input
         });
-
-
 
         $('.register-form').validate({
             errorElement: 'span', //default input error message container
@@ -39,7 +35,7 @@ var CreateAccount = function () {
                     required: true,
                     email: true
                 },
-                age: {
+                address: {
                     required: true
                 },
                 city: {
@@ -74,7 +70,7 @@ var CreateAccount = function () {
 
             },
 
-            highlight: function (element) { // hightlight error inputs
+            highlight: function (element) { // highlight error inputs
                 $(element)
                     .closest('.form-group').addClass('has-error'); // set error class to the control group
             },
@@ -107,14 +103,23 @@ var CreateAccount = function () {
                 return false;
             }
         });
-    }
+
+        jQuery('#register-btn').click(function () {
+            jQuery('.login-form').hide();
+            jQuery('.register-form').show();
+        });
+
+        jQuery('#register-back-btn').click(function () {
+            jQuery('.login-form').show();
+            jQuery('.register-form').hide();
+        });
+    };
 
     return {
         //main function to initiate the module
         init: function () {
-
             handleRegister();
-            jQuery('.register-form').show();
         }
+
     };
 }();

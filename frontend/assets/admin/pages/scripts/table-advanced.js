@@ -1,5 +1,3 @@
-
-
 var TableAdvanced = function () {
 
     var initTable1 = function () {
@@ -37,13 +35,18 @@ var TableAdvanced = function () {
                 "zeroRecords": "No matching records found"
             },
 
+            // Or you can use remote translation file
+            //"language": {
+            //   url: '//cdn.datatables.net/plug-ins/3cfcc339e89/i18n/Portuguese.json'
+            //},
+
             "order": [
                 [0, 'asc']
             ],
             
             "lengthMenu": [
-                [5, 15, 20, -1],
-                [5, 15, 20, "All"] // change per page values here
+                [5, 10, 15, 20, -1],
+                [5, 10, 15, 20, "All"] // change per page values here
             ],
             // set the initial value
             "pageLength": 10,
@@ -116,8 +119,8 @@ var TableAdvanced = function () {
                 [0, 'asc']
             ],
             "lengthMenu": [
-                [5, 15, 20, -1],
-                [5, 15, 20, "All"] // change per page values here
+                [5, 10, 15, 20, -1],
+                [5, 10, 15, 20, "All"] // change per page values here
             ],
 
             // set the initial value
@@ -217,8 +220,8 @@ var TableAdvanced = function () {
                 [1, 'asc']
             ],
             "lengthMenu": [
-                [5, 15, 20, -1],
-                [5, 15, 20, "All"] // change per page values here
+                [5, 10, 15, 20, -1],
+                [5, 10, 15, 20, "All"] // change per page values here
             ],
             // set the initial value
             "pageLength": 10,
@@ -303,8 +306,8 @@ var TableAdvanced = function () {
                 [1, 'asc']
             ],
             "lengthMenu": [
-                [5, 15, 20, -1],
-                [5, 15, 20, "All"] // change per page values here
+                [5, 10, 15, 20, -1],
+                [5, 10, 15, 20, "All"] // change per page values here
             ],
             // set the initial value
             "pageLength": 10,
@@ -356,8 +359,8 @@ var TableAdvanced = function () {
                 [0, 'asc']
             ],
             "lengthMenu": [
-                [5, 15, 20, -1],
-                [5, 15, 20, "All"] // change per page values here
+                [5, 10, 15, 20, -1],
+                [5, 10, 15, 20, "All"] // change per page values here
             ],
             "pageLength": 10 // set the initial value            
         });
@@ -374,7 +377,6 @@ var TableAdvanced = function () {
         /* Fixed header extension: http://datatables.net/extensions/keytable/ */
 
         var oTable = table.dataTable({
-
             // Internationalisation. For more info refer to http://datatables.net/manual/i18n
             "language": {
                 "aria": {
@@ -389,13 +391,12 @@ var TableAdvanced = function () {
                 "search": "Search:",
                 "zeroRecords": "No matching records found"
             },
-
             "order": [
                 [0, 'asc']
             ],
             "lengthMenu": [
-                [5, 15, 20, -1],
-                [5, 15, 20, "All"] // change per page values here
+                [5, 10, 15, 20, -1],
+                [5, 10, 15, 20, "All"] // change per page values here
             ],
             "pageLength": 10, // set the initial value,
             "columnDefs": [{  // set default column settings

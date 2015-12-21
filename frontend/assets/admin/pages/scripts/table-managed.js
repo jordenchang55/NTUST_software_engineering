@@ -14,13 +14,24 @@ var TableManaged = function () {
                     "sortDescending": ": activate to sort column descending"
                 },
                 "emptyTable": "No data available in table",
-                "info": "Showing _START_ to _END_ of _TOTAL_ entries",
-                "infoEmpty": "No entries found",
-                "infoFiltered": "(filtered1 from _MAX_ total entries)",
-                "lengthMenu": "Show _MENU_ entries",
+                "info": "Showing _START_ to _END_ of _TOTAL_ records",
+                "infoEmpty": "No records found",
+                "infoFiltered": "(filtered1 from _MAX_ total records)",
+                "lengthMenu": "Show _MENU_ records",
                 "search": "Search:",
-                "zeroRecords": "No matching records found"
+                "zeroRecords": "No matching records found",
+                "paginate": {
+                    "previous":"Prev",
+                    "next": "Next",
+                    "last": "Last",
+                    "first": "First"
+                }
             },
+
+            // Or you can use remote translation file
+            //"language": {
+            //   url: '//cdn.datatables.net/plug-ins/3cfcc339e89/i18n/Portuguese.json'
+            //},
 
             // Uncomment below line("dom" parameter) to fix the dropdown overflow issue in the datatable cells. The default datatable layout
             // setup uses scrollable div(table-scrollable) with overflow:auto to enable vertical scroll(see: assets/global/plugins/datatables/plugins/bootstrap/dataTables.bootstrap.js). 
@@ -49,16 +60,6 @@ var TableManaged = function () {
             // set the initial value
             "pageLength": 5,            
             "pagingType": "bootstrap_full_number",
-            "language": {
-                "search": "My search: ",
-                "lengthMenu": "  _MENU_ records",
-                "paginate": {
-                    "previous":"Prev",
-                    "next": "Next",
-                    "last": "Last",
-                    "first": "First"
-                }
-            },
             "columnDefs": [{  // set default column settings
                 'orderable': false,
                 'targets': [0]
@@ -108,10 +109,14 @@ var TableManaged = function () {
                     "sortDescending": ": activate to sort column descending"
                 },
                 "emptyTable": "No data available in table",
-                "info": "Showing _START_ to _END_ of _TOTAL_ entries",
-                "infoEmpty": "No entries found",
-                "infoFiltered": "(filtered1 from _MAX_ total entries)",
-                "lengthMenu": "Show _MENU_ entries",
+                "info": "Showing _START_ to _END_ of _TOTAL_ records",
+                "infoEmpty": "No records found",
+                "infoFiltered": "(filtered1 from _MAX_ total records)",
+                "lengthMenu": " _MENU_ records",
+                "paging": {
+                    "previous": "Prev",
+                    "next": "Next"
+                },
                 "search": "Search:",
                 "zeroRecords": "No matching records found"
             },
@@ -129,13 +134,6 @@ var TableManaged = function () {
             ],
             // set the initial value
             "pageLength": 5,
-            "language": {
-                "lengthMenu": " _MENU_ records",
-                "paging": {
-                    "previous": "Prev",
-                    "next": "Next"
-                }
-            },
             "columnDefs": [{  // set default column settings
                 'orderable': false,
                 'targets': [0]
@@ -180,10 +178,10 @@ var TableManaged = function () {
                     "sortDescending": ": activate to sort column descending"
                 },
                 "emptyTable": "No data available in table",
-                "info": "Showing _START_ to _END_ of _TOTAL_ entries",
-                "infoEmpty": "No entries found",
-                "infoFiltered": "(filtered1 from _MAX_ total entries)",
-                "lengthMenu": "Show _MENU_ entries",
+                "info": "Showing _START_ to _END_ of _TOTAL_ records",
+                "infoEmpty": "No records found",
+                "infoFiltered": "(filtered1 from _MAX_ total records)",
+                "lengthMenu": "Show _MENU_ records",
                 "search": "Search:",
                 "zeroRecords": "No matching records found"
             },
@@ -201,9 +199,6 @@ var TableManaged = function () {
             ],
             // set the initial value
             "pageLength": 5,
-            "language": {
-                "lengthMenu": " _MENU_ records"
-            },
             "columnDefs": [{  // set default column settings
                 'orderable': false,
                 'targets': [0]
